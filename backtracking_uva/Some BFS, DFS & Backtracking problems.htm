@@ -1,0 +1,450 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0069)http://online-judge.uva.es/board/viewtopic.php?t=6543&highlight=10400 -->
+<HTML dir=ltr><HEAD><TITLE>online-judge.uva.es :: View topic - can any body give me some BFS, DFS & Backtracking proble</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META http-equiv=Content-Style-Type content=text/css><LINK 
+title="View previous topic" href="viewtopic.php?t=6543&amp;view=previous" 
+rel=prev><LINK title="View next topic" href="viewtopic.php?t=6543&amp;view=next" 
+rel=next><LINK title="Volume C" href="viewforum.php?f=9" rel=up><LINK 
+title=General href="viewforum.php?f=36" rel="chapter forum"><LINK 
+title="Real Time Clarification" href="viewforum.php?f=18" 
+rel="chapter forum"><LINK title="Fixing Mistakes" href="viewforum.php?f=26" 
+rel="chapter forum"><LINK title=HOWTOs href="viewforum.php?f=31" 
+rel="chapter forum"><LINK title="Bugs and suggestions" href="viewforum.php?f=35" 
+rel="chapter forum"><LINK title="Other words" href="viewforum.php?f=12" 
+rel="chapter forum"><LINK title=Algorithms href="viewforum.php?f=22" 
+rel="chapter forum"><LINK title="New features" href="viewforum.php?f=11" 
+rel="chapter forum"><LINK title="Volume I" href="viewforum.php?f=1" 
+rel="chapter forum"><LINK title="Volume II" href="viewforum.php?f=2" 
+rel="chapter forum"><LINK title="Volume III" href="viewforum.php?f=4" 
+rel="chapter forum"><LINK title="Volume IV" href="viewforum.php?f=5" 
+rel="chapter forum"><LINK title="Volume V" href="viewforum.php?f=6" 
+rel="chapter forum"><LINK title="Volume VI" href="viewforum.php?f=7" 
+rel="chapter forum"><LINK title="Volume VII" href="viewforum.php?f=8" 
+rel="chapter forum"><LINK title="Volume VIII" href="viewforum.php?f=21" 
+rel="chapter forum"><LINK title="Volume IX" href="viewforum.php?f=34" 
+rel="chapter forum"><LINK title="Volume C" href="viewforum.php?f=9" 
+rel="chapter forum"><LINK title="Volume CI" href="viewforum.php?f=10" 
+rel="chapter forum"><LINK title="Volume CII" href="viewforum.php?f=17" 
+rel="chapter forum"><LINK title="Volume CIII" href="viewforum.php?f=20" 
+rel="chapter forum"><LINK title="Volume CIV" href="viewforum.php?f=23" 
+rel="chapter forum"><LINK title="Volume CV" href="viewforum.php?f=25" 
+rel="chapter forum"><LINK title="Volume CVI" href="viewforum.php?f=28" 
+rel="chapter forum"><LINK title="Volume CVII" href="viewforum.php?f=29" 
+rel="chapter forum"><LINK title="Volume CVIII" href="viewforum.php?f=30" 
+rel="chapter forum"><LINK title="Volume CIX" href="viewforum.php?f=32" 
+rel="chapter forum"><LINK title="Volume CX" href="viewforum.php?f=33" 
+rel="chapter forum"><LINK title="Volume CXI" href="viewforum.php?f=37" 
+rel="chapter forum"><LINK title=C href="viewforum.php?f=13" 
+rel="chapter forum"><LINK title=C++ href="viewforum.php?f=14" 
+rel="chapter forum"><LINK title=Pascal href="viewforum.php?f=15" 
+rel="chapter forum"><LINK title=Java href="viewforum.php?f=16" 
+rel="chapter forum"><LINK title="Off topic (General chit-chat)" 
+href="viewforum.php?f=24" rel="chapter forum"><!-- link rel="stylesheet" href="templates/subSilver/subSilver.css" type="text/css" -->
+<STYLE type=text/css>@import url( templates/subSilver/formIE.css );
+BODY {
+	SCROLLBAR-FACE-COLOR: #dee3e7; SCROLLBAR-HIGHLIGHT-COLOR: #ffffff; SCROLLBAR-SHADOW-COLOR: #dee3e7; SCROLLBAR-3DLIGHT-COLOR: #d1d7dc; SCROLLBAR-ARROW-COLOR: #006699; SCROLLBAR-TRACK-COLOR: #efefef; SCROLLBAR-DARKSHADOW-COLOR: #98aab1; BACKGROUND-COLOR: #e5e5e5
+}
+FONT {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+TH {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+TD {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+P {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+A:link {
+	COLOR: #006699
+}
+A:active {
+	COLOR: #006699
+}
+A:visited {
+	COLOR: #006699
+}
+A:hover {
+	COLOR: #dd6900; TEXT-DECORATION: underline
+}
+HR {
+	BORDER-RIGHT: #d1d7dc 0px solid; BORDER-TOP: #d1d7dc 1px solid; BORDER-LEFT: #d1d7dc 0px solid; BORDER-BOTTOM: #d1d7dc 0px solid; HEIGHT: 0px
+}
+.bodyline {
+	BORDER-RIGHT: #98aab1 1px solid; BORDER-TOP: #98aab1 1px solid; BORDER-LEFT: #98aab1 1px solid; BORDER-BOTTOM: #98aab1 1px solid; BACKGROUND-COLOR: #ffffff
+}
+.forumline {
+	BORDER-RIGHT: #006699 2px solid; BORDER-TOP: #006699 2px solid; BORDER-LEFT: #006699 2px solid; BORDER-BOTTOM: #006699 2px solid; BACKGROUND-COLOR: #ffffff
+}
+TD.row1 {
+	BACKGROUND-COLOR: #efefef
+}
+TD.row2 {
+	BACKGROUND-COLOR: #dee3e7
+}
+TD.row3 {
+	BACKGROUND-COLOR: #d1d7dc
+}
+TD.rowpic {
+	BACKGROUND-IMAGE: url('templates/subSilver/images/cellpic2.jpg'); BACKGROUND-REPEAT: repeat-y; BACKGROUND-COLOR: #ffffff
+}
+TH {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; BACKGROUND-IMAGE: url('templates/subSilver/images/cellpic3.gif'); COLOR: #ffa34f; HEIGHT: 25px; BACKGROUND-COLOR: #006699
+}
+TD.cat {
+	border:medium solid #ffffff; BACKGROUND-IMAGE: url('templates/subSilver/images/cellpic1.gif'); HEIGHT: 28px; BACKGROUND-COLOR: #d1d7dc
+}
+TD.catHead {
+	border:medium solid #ffffff; BACKGROUND-IMAGE: url('templates/subSilver/images/cellpic1.gif'); HEIGHT: 28px; BACKGROUND-COLOR: #d1d7dc
+}
+TD.catSides {
+	border:medium solid #ffffff; BACKGROUND-IMAGE: url('templates/subSilver/images/cellpic1.gif'); HEIGHT: 28px; BACKGROUND-COLOR: #d1d7dc
+}
+TD.catLeft {
+	border:medium solid #ffffff; BACKGROUND-IMAGE: url('templates/subSilver/images/cellpic1.gif'); HEIGHT: 28px; BACKGROUND-COLOR: #d1d7dc
+}
+TD.catRight {
+	border:medium solid #ffffff; BACKGROUND-IMAGE: url('templates/subSilver/images/cellpic1.gif'); HEIGHT: 28px; BACKGROUND-COLOR: #d1d7dc
+}
+TD.catBottom {
+	border:medium solid #ffffff; BACKGROUND-IMAGE: url('templates/subSilver/images/cellpic1.gif'); HEIGHT: 28px; BACKGROUND-COLOR: #d1d7dc
+}
+TD.cat {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 29px; BORDER-RIGHT-WIDTH: 0px
+}
+TD.catHead {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 29px; BORDER-RIGHT-WIDTH: 0px
+}
+TD.catBottom {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; HEIGHT: 29px; BORDER-RIGHT-WIDTH: 0px
+}
+TH.thHead {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; FONT-WEIGHT: bold; BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px
+}
+TH.thSides {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; FONT-WEIGHT: bold; BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px
+}
+TH.thTop {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; FONT-WEIGHT: bold; BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px
+}
+TH.thLeft {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; FONT-WEIGHT: bold; BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px
+}
+TH.thRight {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; FONT-WEIGHT: bold; BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px
+}
+TH.thBottom {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; FONT-WEIGHT: bold; BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px
+}
+TH.thCornerL {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; FONT-WEIGHT: bold; BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px
+}
+TH.thCornerR {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; FONT-WEIGHT: bold; BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; HEIGHT: 28px
+}
+TD.row3Right {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; BACKGROUND-COLOR: #d1d7dc
+}
+TD.spaceRow {
+	BORDER-RIGHT: #ffffff solid; BORDER-TOP: #ffffff solid; BORDER-LEFT: #ffffff solid; BORDER-BOTTOM: #ffffff solid; BACKGROUND-COLOR: #d1d7dc
+}
+TH.thHead {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 1px
+}
+TD.catHead {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 1px
+}
+TH.thSides {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 1px
+}
+TD.catSides {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 1px
+}
+TD.spaceRow {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 1px
+}
+TH.thRight {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 1px
+}
+TD.catRight {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 1px
+}
+TD.row3Right {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 1px
+}
+TH.thLeft {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+TD.catLeft {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+TH.thBottom {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 1px; BORDER-RIGHT-WIDTH: 1px
+}
+TD.catBottom {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 1px; BORDER-RIGHT-WIDTH: 1px
+}
+TH.thTop {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+TH.thCornerL {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+TH.thCornerR {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 1px
+}
+.maintitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 22px; COLOR: #000000; LINE-HEIGHT: 120%; FONT-FAMILY: "Trebuchet MS",Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.gen {
+	FONT-SIZE: 12px
+}
+.genmed {
+	FONT-SIZE: 11px
+}
+.gensmall {
+	FONT-SIZE: 10px
+}
+.gen {
+	COLOR: #000000
+}
+.genmed {
+	COLOR: #000000
+}
+.gensmall {
+	COLOR: #000000
+}
+A.gen {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+A.genmed {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+A.gensmall {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+A.gen:hover {
+	COLOR: #dd6900; TEXT-DECORATION: underline
+}
+A.genmed:hover {
+	COLOR: #dd6900; TEXT-DECORATION: underline
+}
+A.gensmall:hover {
+	COLOR: #dd6900; TEXT-DECORATION: underline
+}
+.mainmenu {
+	FONT-SIZE: 11px; COLOR: #000000
+}
+A.mainmenu {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+A.mainmenu:hover {
+	COLOR: #dd6900; TEXT-DECORATION: underline
+}
+.cattitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #006699; LETTER-SPACING: 1px
+}
+A.cattitle {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+A.cattitle:hover {
+	TEXT-DECORATION: underline
+}
+.forumlink {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #006699
+}
+A.forumlink {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+A.forumlink:hover {
+	COLOR: #dd6900; TEXT-DECORATION: underline
+}
+.nav {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000
+}
+A.nav {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+A.nav:hover {
+	TEXT-DECORATION: underline
+}
+.topictitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000
+}
+H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000
+}
+H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000
+}
+A.topictitle:link {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+A.topictitle:visited {
+	COLOR: #5493b4; TEXT-DECORATION: none
+}
+A.topictitle:hover {
+	COLOR: #dd6900; TEXT-DECORATION: underline
+}
+.name {
+	FONT-SIZE: 11px; COLOR: #000000
+}
+.postdetails {
+	FONT-SIZE: 10px; COLOR: #000000
+}
+.postbody {
+	FONT-SIZE: 12px; LINE-HEIGHT: 18px
+}
+A.postlink:link {
+	COLOR: #006699; TEXT-DECORATION: none
+}
+A.postlink:visited {
+	COLOR: #5493b4; TEXT-DECORATION: none
+}
+A.postlink:hover {
+	COLOR: #dd6900; TEXT-DECORATION: underline
+}
+.code {
+	BORDER-RIGHT: #d1d7dc 1px solid; BORDER-TOP: #d1d7dc 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #d1d7dc 1px solid; COLOR: #006600; BORDER-BOTTOM: #d1d7dc 1px solid; FONT-FAMILY: Courier, 'Courier New', sans-serif; BACKGROUND-COLOR: #fafafa
+}
+.quote {
+	BORDER-RIGHT: #d1d7dc 1px solid; BORDER-TOP: #d1d7dc 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #d1d7dc 1px solid; COLOR: #444444; LINE-HEIGHT: 125%; BORDER-BOTTOM: #d1d7dc 1px solid; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #fafafa
+}
+.copyright {
+	FONT-SIZE: 10px; COLOR: #444444; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; LETTER-SPACING: -1px
+}
+A.copyright {
+	COLOR: #444444; TEXT-DECORATION: none
+}
+A.copyright:hover {
+	COLOR: #000000; TEXT-DECORATION: underline
+}
+INPUT {
+	BORDER-LEFT-COLOR: #000000; BORDER-BOTTOM-COLOR: #000000; FONT: 11px Verdana, Arial, Helvetica, sans-serif; COLOR: #000000; BORDER-TOP-COLOR: #000000; BORDER-RIGHT-COLOR: #000000
+}
+TEXTAREA {
+	BORDER-LEFT-COLOR: #000000; BORDER-BOTTOM-COLOR: #000000; FONT: 11px Verdana, Arial, Helvetica, sans-serif; COLOR: #000000; BORDER-TOP-COLOR: #000000; BORDER-RIGHT-COLOR: #000000
+}
+SELECT {
+	BORDER-LEFT-COLOR: #000000; BORDER-BOTTOM-COLOR: #000000; FONT: 11px Verdana, Arial, Helvetica, sans-serif; COLOR: #000000; BORDER-TOP-COLOR: #000000; BORDER-RIGHT-COLOR: #000000
+}
+INPUT.post {
+	BACKGROUND-COLOR: #ffffff
+}
+TEXTAREA.post {
+	BACKGROUND-COLOR: #ffffff
+}
+SELECT {
+	BACKGROUND-COLOR: #ffffff
+}
+INPUT {
+	TEXT-INDENT: 2px
+}
+INPUT.button {
+	FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #efefef
+}
+INPUT.mainoption {
+	FONT-WEIGHT: bold; BACKGROUND-COLOR: #fafafa
+}
+INPUT.liteoption {
+	FONT-WEIGHT: normal; BACKGROUND-COLOR: #fafafa
+}
+.helpline {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BACKGROUND-COLOR: #dee3e7; BORDER-BOTTOM-STYLE: none
+}
+</STYLE>
+
+<SCRIPT language=Javascript type=text/javascript>
+<!--
+	if ( 0 )
+	{
+		window.open('privmsg.php?mode=newpm', '_phpbbprivmsg', 'HEIGHT=225,resizable=yes,WIDTH=400');;
+	}
+//-->
+</SCRIPT>
+
+<META content="Microsoft FrontPage 5.0" name=GENERATOR></HEAD>
+<BODY text=#000000 vLink=#5493b4 link=#006699 bgColor=#e5e5e5><A name=top></A>
+<TABLE cellSpacing=0 cellPadding=10 width="100%" align=center border=0>
+  <TBODY>
+  <TR>
+    <TD class=bodyline>
+      <TABLE class=forumline cellSpacing=1 cellPadding=3 width="100%" 
+        border=0><TBODY>
+        <TR>
+          <TD class=spaceRow colSpan=2 height=1></TD></TR>
+        <TR>
+          <TD class=row2 vAlign=top align=left width=150>&nbsp;</TD>
+          <TD class=row2 vAlign=top width="100%" height=28>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD width="100%">&nbsp;</TD>
+                <TD vAlign=top noWrap>&nbsp;</TD></TR>
+              <TR>
+                <TD colSpan=2>
+                  &nbsp;</TD></TR>
+              <TR>
+                <TD colSpan=2><SPAN class=postbody></SPAN>
+                  <TABLE cellSpacing=1 cellPadding=3 width="90%" align=center 
+                  border=0>
+                    <TBODY>
+                    <TR>
+                      <TD>&nbsp;</TD></TR>
+                    <TR>
+                      <TD class=quote><BR><BR>************* DFS 
+                        *********************** <BR>* 00112 Tree Summing * <BR>* 
+                        00140 Bandwidth * <BR>* 00155 All Squares * <BR>* 00165 
+                        Stamps * <BR>* 00193 Graph Colouring * <BR>* 00195 
+                        Anagrams * <BR>* 00208 Firetruck * <BR>* 00216 Getting 
+                        in Line * <BR>* 00280 Vertex * <BR>* 00296 Safebreaker * 
+                        <BR>* 00301 Transportation * <BR>* 00380 Call forwarding 
+                        * <BR>* 00385 Slurpys * <BR>* 00399 Another Puzzling 
+                        Problem * <BR>* 00416 LED test * <BR>* 00441 Lotto * 
+                        <BR>* 00469 Wetlands of florida * <BR>* 00529 Addition 
+                        chains * <BR>* 00539 Settlers of Catan * <BR>* 00565 
+                        Pizza Anyone? * <BR>* 00571 Jugs (bfs appr) * <BR>* 
+                        00574 Sum It Up * <BR>* 00590 Always on the run * <BR>* 
+                        00598 Bundling Newspapers * <BR>* 00610 Street 
+                        Directions * <BR>* 00620 Cellular Structure * <BR>* 
+                        00657 The die is cast * <BR>* 00677 All Walks of * <BR>* 
+                        00628 Passwords * <BR>* 00639 Don't Get Rooked * <BR>* 
+                        00656 Optimal Programs * <BR>* 00729 Hamming Distance 
+                        Problem * <BR>* 00732 Anagrams by Stack * <BR>* 00743 
+                        The MTM Machine * <BR>* 00776 Monkeys in a Regular 
+                        Forest * <BR>* 00782 Contour Painting * <BR>* 00784 Maze 
+                        Exploration * <BR>* 00785 Grid Colouring * <BR>* 10004 
+                        Bicoloring * <BR>* 10063 Knuth's Permutation * <BR>* 
+                        10068 Treasure Hunt, the * <BR>* 10098 Generating 
+                        FastSorted Permutations * <BR>* 10186 Euro Cup 2000 * 
+                        <BR>* 10276 Hanoi Tower Troubles Again! * <BR>* 10285 
+                        Longest Run on a Snowboard * <BR>* 10344 23 out of 5 * 
+                        <BR>* 10364 Square * <BR>* <B 
+                        style="COLOR: #ffa34f">10400</B> Game Show Math * <BR>* 
+                        10419 Sum-up the Primes * <BR>* 10422 Knights in FEN * 
+                        <BR>* 10447 Sum-up the Primes II * <BR>* 10496 
+                        Collecting Beepers * <BR>* 10501 Simplified Shisen-Sho * 
+                        <BR>* 10503 Domino Solitaire, the * <BR>* 10513 
+                        Bangladesh Sequences * <BR>* 10582 ASCII Labyrinth * 
+                        <BR>* 10605 Mines for Diamonds * <BR>* 10637 Coprimes * 
+                        <BR>********************************************* 
+                        <BR><BR>************* BFS ****************** <BR>* 00321 
+                        The new Villa * <BR>* 00336 Node too far * <BR>* 00383 
+                        Shipping routes * <BR>* 00429 word transformation * 
+                        <BR>* 00567 Risk * <BR>* 00589 Pushing boxes * <BR>* 
+                        00633 Chess knight * <BR>* 00642 Word Amalgamation * 
+                        <BR>* 00707 Robbery * <BR>* 00762 We Ship Cheap * <BR>* 
+                        10009 All Roads Lead Where? * <BR>* 10422 Knights in FEN 
+                        * 
+                    <BR>**************************************</TD></TR></TBODY></TABLE><SPAN 
+                  class=postbody><BR>_________________<BR>&nbsp;</SPAN></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD class=spaceRow colSpan=2 height=1></TD></TR>
+        <TR align=middle>
+          <TD class=catBottom colSpan=2 height=28>
+            &nbsp;</TD></TR></TBODY></TABLE>
+      <DIV align=center><SPAN class=copyright><BR>&nbsp;</SPAN></DIV>
+      <DIV align=center>&nbsp;</DIV>
+      <DIV align=center>&nbsp;</DIV></TD></TR></TBODY></TABLE></BODY></HTML>

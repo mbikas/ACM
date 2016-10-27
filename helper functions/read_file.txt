@@ -1,0 +1,2 @@
+freopen("10474.in","r",stdin);
+freopen("10474.out","w",stdout);

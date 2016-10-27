@@ -1,0 +1,7 @@
+start=clock(); 
+sieve_prime(1,20000000); 
+end=clock(); 
+
+coderun=(double)(end-start)/CLOCKS_PER_SEC; 
+
+printf("%lf\n",coderun); 

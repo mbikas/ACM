@@ -1,0 +1,4 @@
+#define ERROR 0.00000001
+
+if (fabs(a-b)<ERROR) 
+printf( "They are equal\n" );
